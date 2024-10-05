@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Member</title>
+</head>
+<body>
+    <form action="" method="post">
+        <center>
+            <h2>Register New Member</h2><br><br><br>
+            <label for="name">Full Name : </label>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" pattern=".+@email\.com" required><br><br>
+            
+            <label for="mobno">Mobile No. : </label>
+            <input type="text" id="mobno" minlength="10" maxlength="10" required><br><br>
+            <label for="gender">Gender : </label>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="gender">Female</label>
+            <input type="radio" id="gender" name="gender" value="Male">
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="Other">
+            <label for="gender">Other</label><br><br>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" rows="4" cols="25"></textarea><br><br>
+            <label for="designation">Designation : </label>
+            <select name="designation" id="designation">
+                <option value="principle">Principle</option>
+                <option value="teacher">Teacher</option>
+                <option value="staff">Staff</option>
+            </select><br><br>
+            <label for="department">Department : </label>
+            <select name="department" id="department">
+                <option value="arts">Arts</option>
+                <option value="Commerce">Commerce</option>
+                <option value="science">Science</option>
+                <option value="account">Account</option>
+            </select><br><br>
+            <a href="Update Member.html"><input type="submit"></a>&nbsp;&nbsp;&nbsp;
+            <input type="reset">
+        </center>
+    </form>
+</body>
+</html>
