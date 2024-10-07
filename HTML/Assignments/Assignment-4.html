@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrastion Form</title>
+</head>
+
+<body>
+    <table border="2" style="width: 900px;">
+        <tr>
+            <th style="height: 30px;" colspan="4">Registration Form</th>
+        </tr>
+        <tr>
+            <td><label for="sname">Student Name</label></td>
+            <td><input type="text" name="name" id="fname" placeholder="First Name" required></td>
+            <td><input type="text" name="name" id="mname" placeholder="Middle Name" required></td>
+            <td><input type="text" name="name" id="lname" placeholder="Last Name" required></td>
+        </tr>
+        <tr>
+            <td><label for="fathernm">Father's Name</label></td>
+            <td><input type="text" name="fathernm" id="fathernm" placeholder="Enter your father's name" required></td>
+            <td><label for="mothernm">Mother's Name</label></td>
+            <td><input type="text" name="mothernm" id="mothernm" placeholder="Enter your mother's name" required></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" name="DOB" id="dob"></td>
+            <td><label for="gender">Gender</label></td>
+            <td><input type="radio" name="gender" id="gender" value="Male">Male <input type="radio" name="gender"
+                    id="gender" value="Female">Female</td>
+        </tr>
+        <tr>
+            <td><label for="esman"></label>Ex-Serviceman</td>
+            <td><input type="radio" name="esman" id="esman" value="Yes">Yes <input type="radio" name="esman" id="esman"
+                    value="No">No</td>
+            <td><label for="ews">EWS</label></td>
+            <td><input type="radio" name="ews" id="ews" value="Yes">Yes <input type="radio" name="ews" id="ews"
+                    value="No">No</td>
+        </tr>
+        <tr>
+            <td><label for="email">Email Id</label></td>
+            <td><input type="email" name="email" id="email"></td>
+            <td><label for="mobno">Mobile No.</label></td>
+            <td><input type="text" name="mobno" id="mobno" required></td>
+        </tr>
+        <tr>
+            <td><label for="state">State</label></td>
+            <td><select name="state" id="state">
+                    <option value="" selected disabled hidden>Select any one</option>
+                    <option value="Andhrapradesh">Andhrapredesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select></td>
+            <td><label for="city">City</label></td>
+            <td><select name="city" id="city">
+                    <option value="" selected disabled hidden>Select any one</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="Nashik">Nashik</option>
+                </select>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="photo">Upload Photo</label></td>
+            <td><input type="file" name="photo" id="photo"></td>
+            <td><label for="sign">Signature</label></td>
+            <td><input type="file" name="sign" id="sign"></td>
+        </tr>
+        <tr style="height: 40px;">
+            <td></td>
+            <td colspan="3" style="text-align: center;"><input type="button" value="Submit"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
