@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property for Display</title>
+    <style>
+        .one{
+            display: inline;
+        }
+        .two{
+            display: block;
+        }
+        .three{
+            display: inline-block;
+        }
+        .four{
+            display: none;
+        }
+        .red {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+
+        .grey {
+            background-color: grey;
+            height: 100px;
+            width: 100px;
+        }
+
+       #box1{
+            
+            margin: 20px auto;
+            border: 2px solid brown;
+            width: 100%;
+            height: 100%;
+        }
+
+        #box2{
+            margin: 20px auto;
+            border: 2px solid rgb(103, 26, 218);
+            width: 100%;
+            height: 100%;
+        }
+
+        #box3{
+            margin: 20px auto;
+            border: 2px solid rgb(35, 129, 7);
+            width: 100%;
+            height: 100%;
+        }
+
+        #box4{
+            margin: 20px auto;
+            border: 2px solid rgb(124, 20, 70);
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="box1" class="one">
+            <div class="red one">Div 1</div>
+            <div class="blue one">Div 2</div>
+            <div class="grey one">Div 3</div>
+        </div>
+   
+        <div id="box2">
+            <div class="red two">Div 1</div>
+            <div class="blue two">Div 2</div>
+            <div class="grey two">Div 3</div>
+        </div>
+        <div id="box3">
+            <div class="red three">Div 1</div>
+            <div class="blue three">Div 2</div>
+            <div class="grey three">Div 3</div>
+        </div>
+        <div id="box4">
+            <div class="red four">Div 1</div>
+            <div class="blue four">Div 2</div>
+            <div class="grey four">Div 3</div>
+        </div>
+</body>
+
+</html>
