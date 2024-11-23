@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties For Items</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            border: 3px solid navy;
+            justify-content: center;
+        }
+        div>div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: khaki;
+        }
+        #box1{
+            flex-shrink: 1;
+        }
+        #box2{
+            flex-grow: 2;
+        }
+        #box3{
+            flex-shrink: 0.5;
+        }
+        #box5{
+            flex-grow: 3;
+        }
+        #box4{
+            align-self: center;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="box1">Box1</div>
+        <div id="box2">Box2</div>
+        <div id="box3">Box3 </div>
+        <div id="box4">Box4</div>
+        <div id="box5">Box5</div>
+    </div>
+</body>
+</html>
