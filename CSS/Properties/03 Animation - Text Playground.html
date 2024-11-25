@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow and Stay</title>
+    <style>
+        .demo{
+            height: 100px;
+            border-top: 100px solid #cccccc;
+        }
+        @keyframes Grow{
+            0%{
+                font-size: 0;
+            }
+            100%{
+                font-size: 40px;
+            }
+        }
+        .demo :hover .grows{
+            animation: Grow 2s linear 0s 1 normal;
+        }
+        .demo:hover .grow-and-stay{
+            animation:Grow 2s linear 0s 1 normal backwards;
+        }
+    </style>
+</head>
+<body>
+    <p>Move Your Mouse Over The Grey Box</p>
+    <div class="demo">
+        <div class="grow-and-stay">This grows and stays big</div>
+        <div class="grows">This just grow</div>
+    
+    </div>
+</body>
+</html>
