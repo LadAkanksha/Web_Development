@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            left: 0pz;
+            animation: Motion 3s linear 1s infinite normal;
+        }
+        @keyframes Motion{
+            0%{
+                background-color: rgb(183, 183, 249);
+                left: 5px;
+            }
+            50%{
+                background-color: rgb(99, 99, 244);
+            }
+            100%{
+                background-color: rgb(6, 6, 253);
+                left: 200px;
+            }
+        }
+        #circle1{
+            top:0px;
+            animation: Motion 3s linear 1s infinite normal;
+        }
+        #circle2{
+            top: 130px;
+            animation: Motion 3s steps(3) 1s infinite reverse;
+        }
+        #circle3{
+            top:270px;
+            animation: Motion 3s ease-in-out 1s infinite alternate;
+        }
+        #circle4{
+            top: 400px;
+            animation: Motion 3s ease-out 1s infinite alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+    <div id="circle4"></div>
+</body>
+</html>
