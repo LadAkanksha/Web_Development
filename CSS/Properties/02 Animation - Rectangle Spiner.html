@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin The Rectangle</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: rebeccapurple;
+            border-radius: 10%;
+            position:relative;
+            top: 20px;
+            left: 30px;
+        }
+        #rectangle:hover{
+            animation: Spiner 0.7s linear 0s 1 reverse;
+        }
+        @keyframes Spiner{
+            to{
+                transform: rotate(0) ;
+            }
+            from{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="rectangle"></div>
+</body>
+</html>
