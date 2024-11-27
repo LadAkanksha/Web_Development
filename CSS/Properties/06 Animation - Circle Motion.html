@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Motion</title>
+    <style>
+        .main-container{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border:  5px solid;
+            position: absolute;
+        }
+        .one{
+            border-color: red;
+            animation: rotate 4s ease-in infinite;
+            
+        }
+        .two{
+            border-color: green;
+            animation: rotate 4s ease-in-out infinite;
+        }
+        .three{
+            border-color: blue;
+            animation: rotate 4s ease-out infinite;
+        }
+        @keyframes rotate {
+            0%{
+                rotate: 0deg;
+                width: 100%;
+            }
+            50%{
+                width: 40%;
+            }
+            100%{
+                rotate: 360deg;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+    </div>
+</body>
+</html>
