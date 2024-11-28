@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div{
+            margin: 30px auto;
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #box1{
+            background-image: linear-gradient(red,rgb(37, 192, 37),rgb(157, 0, 255));
+        }
+        #box2{
+            background-image: linear-gradient(to right,red,rgb(37, 192, 37),rgb(157, 0, 255));
+        }
+        #box3{
+            background-image: linear-gradient(to top left,red,rgb(37, 192, 37),rgb(157, 0, 255));
+        }
+        #box4{
+            background-image: linear-gradient(165deg,red,rgb(37, 192, 37),rgb(157, 0, 255));
+        }
+        #box5{
+            background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h2>Linear Gradient</h2>
+        <p>top to bottom(default)</p>
+    </div>
+    <div id="box2">
+        <h2>Linear Gradient</h2>
+        <p>left to right</p>
+    </div>
+    <div id="box3">
+        <h2>Linear Gradient</h2>
+        <p>top to bottom</p>
+    </div>
+    <div id="box4">
+        <h2>Linear Gradient</h2>
+        <p>165<sup>0</sup></p>
+    </div>
+    <div id="box5">
+        <h2>Rainbow Background</h2>
+    </div>
+</body>
+</html>
