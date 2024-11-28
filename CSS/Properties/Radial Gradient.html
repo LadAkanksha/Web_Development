@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+         div{
+            margin: 30px auto;
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #box1{
+            background-image: radial-gradient(red,green,blue);
+        }
+        #box2{
+            background-image: radial-gradient(white 1%,red 20%,rgb(25, 247, 25) 40%,yellow 60%);
+        }
+        #box3{
+            background-image: radial-gradient(circle,red ,yellow ,green);
+        }
+        #box4{
+            background-image: radial-gradient(closest-side at 60% 55%,red,yellow,black);
+        }
+        #box5{
+            background-image: radial-gradient(farthest-side at 60% 55%,red,yellow,black);
+        }
+        #box6{
+            background-image: radial-gradient(closest-corner at 60% 55%,red,yellow,black);
+        }
+        #box7{
+            background-image: radial-gradient(farthest-corner at 60% 55%,red,yellow,black);
+        }
+        #box8{
+            background-image: repeating-radial-gradient(red ,yellow 10%,green 15%);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box8">repeating-radial-gradient</div>
+    <hr>
+    <div id="box4">closest-side</div>
+    <div id="box5">farthest-side</div>
+    <div id="box6">closest-corner</div>
+    <div id="box7">farthest-corner</div>
+    
+</body>
+</html>
