@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nesting Counter</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1::before{
+            counter-increment: section;
+            content: "Section "counter(section)" : ";
+        }
+        h2::before{
+            counter-increment: subsection;
+            content: counter(section)" . "counter(subsection)" : ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Front-End</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JavaScript</h2>
+
+    <h1>Back-End</h1>
+    <h2>C++</h2>
+    <h2>JAVA</h2>
+    <h2>C#</h2>
+
+    <h1>Database</h1>   
+    <h2>SQL</h2>
+    <h2>MySQL</h2>
+    <h2>Pl-SQL</h2>
+</body>
+</html>
