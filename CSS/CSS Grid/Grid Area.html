@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Property</title>
+    <style>
+         
+        .container{
+            margin: 20px auto;
+            width: 50vw;
+            background-color: rgb(10, 74, 10);
+            display: grid;
+            grid-template-areas: 'header header header header header' 'menu  main main right right''menu footer footer footer footer';
+            padding: 10px;
+            gap: 10px;
+        }
+        .container div{
+            background-color: rgb(100, 194, 100);
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .item1{grid-area: header;}
+        .item2{grid-area: menu;}
+        .item3{grid-area: main;}
+        .item4{grid-area: right;}
+        .item5{grid-area: footer;}
+
+        .grid-container1{
+            display: grid;
+            grid-template-columns:  auto auto auto auto auto auto;
+            /* column-gap: 5px;
+            row-gap: 5px; */
+            gap: 10px 10px;
+            background-color: rgb(49, 101, 243);
+            padding: 10px;
+        }
+        .grid-item{
+            background-color: rgb(96, 189, 226);
+            border: 1px solid black;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+        .item{
+            grid-area: 1/2/5/6;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+    <h1>Example 2</h1>
+    <div class="grid-container1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+    </div>
+</body>
+</html>
