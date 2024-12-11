@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JavaScript</title>
+</head>
+
+<body>
+    <h2>JavaScript Variable</h2>
+    <!-- Automatically -->
+     <h3>Automatically Variable => </h3>
+     <p id="demo1"></p>
+     <h3>Let Variable => </h3>
+     <p id="demo2"></p>
+     <h3>Const Variable => </h3>
+     <p id="demo3"></p>
+
+    <script>
+        a = 15;
+        b = 5;
+        c = a + b;
+        document.getElementById("demo1").innerHTML = "The Addition of 15 + 5 = " + c;
+
+        let p = 67;
+        let q = 9;
+        let r = p-q;
+        document.getElementById("demo2").innerHTML = "The SubStraction of 67 - 9 = " + r;
+
+        const x = 4;
+        const y = 8;
+        const z = x*y;
+        document.getElementById("demo3").innerHTML = "The Multiplication of 4 * 8 = " + z;
+    </script>
+
+</body>
+
+</html>
