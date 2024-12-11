@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output</title>
+</head>
+
+<body>
+    <h1>Different Type Of Showing Output In JavaScript</h1>
+    <fieldset>
+        <legend>innerHTML</legend>
+        <p id="demo1"></p>
+    </fieldset>
+    <fieldset>
+        <legend>document.write()</legend>
+        <button type="button" onclick="document.write('10 + 20 = '+(10+20));">10 + 20</button>
+    </fieldset>
+    <fieldset>
+        <legend>window.alert</legend>
+        <button type="button" onclick="myFunction1()">Click me</button>
+    </fieldset>
+    <fieldset>
+        <legend>console.log</legend>
+        <p>After Clicking The Button You Can't See The Result. <br>To See The Result ,Right Click The Touchpad And Choose Option - Inspect.After That Click Console ,Then You See The Result.</p>
+        <button type="button" onclick="myFunction2()">Click me</button>
+    </fieldset>
+
+    <script>
+        document.getElementById("demo1").innerHTML = "5 + 6 = "+(5 + 6);
+        function myFunction1(){
+            alert("100 + 1 = "+(100+1));
+        }
+        function myFunction2(){
+            console.log("25 + 75 = ",(25 + 75));
+        }
+
+    </script>
+</body>
+
+</html>
