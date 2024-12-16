@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template 01</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:'header header header header header''sidebar con1 con1 con1 con1''sidebar con2 con2 con3 con3''footer footer footer footer footer';
+            gap: 10px;
+            /* background-color: rgb(60, 195, 60); */
+            width: 50vw;
+            margin: 30px auto;
+            
+        }
+        .container div{
+            background-color: rgb(44, 203, 44);
+            padding: 20px;
+            text-align: center;
+        }
+        .item1{grid-area: header;}
+        .item2{grid-area: sidebar;}
+        .item3{grid-area: con1;}
+        .item4{grid-area: con2;}
+        .item5{grid-area: con3;}
+        .item6{grid-area: footer;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Side Bar</div>
+        <div class="item3">Content 1</div>
+        <div class="item4">Content 2</div>
+        <div class="item5">Content 3</div>
+        <div class="item6">Footer</div>
+    </div>
+</body>
+</html>
