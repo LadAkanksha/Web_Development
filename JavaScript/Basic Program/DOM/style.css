@@ -1,0 +1,10 @@
+body{
+    background-color: aquamarine;
+}
+#box{
+    background-color: chocolate;
+    color: rgb(3, 2, 49);
+    border: 5px solid rgb(243, 9, 9);
+    height: 100%;
+    width: 200px;
+}
