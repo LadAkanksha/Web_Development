@@ -1,0 +1,15 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(2, 251, 76);
+    color: black;
+}
+button{
+    background-color: rgb(49, 7, 61);
+    color: white;
+    padding: 10px;
+}
