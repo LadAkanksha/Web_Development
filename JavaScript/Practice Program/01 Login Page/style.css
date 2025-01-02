@@ -1,0 +1,43 @@
+.container{
+    height: 100%;
+    width: 300px;
+    background-color: rgb(231, 155, 248);
+    color: white;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid rgb(38, 1, 52);
+}
+.header{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    color: rgb(90, 5, 90);
+}
+label,input{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+button{
+    font-weight: 700;
+    height: 30px;
+    width: 70px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(236, 213, 248);
+    color: rgb(95, 33, 120);
+}
+button:hover{
+    cursor: pointer;
+    width: 80px;
+    background-color: rgb(95, 33, 120);
+    color: rgb(236, 213, 248);
+}
+.message{
+    color: red;
+    margin: 2px;
+    padding: 0;
+    display: block;
+    /* visibility:hidden; */
+}
