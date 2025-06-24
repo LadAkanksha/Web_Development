@@ -1,0 +1,21 @@
+#container{
+    display: inline-block;
+    background-color: aliceblue;
+    border: 2px solid navy;
+}
+.boxes
+{
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 35px;
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    border: 1px solid brown;
+}
+button{
+    background-color: rgb(103, 95, 255);
+    color: rgb(255, 255, 255);
+}
